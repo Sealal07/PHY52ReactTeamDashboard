@@ -1,0 +1,16 @@
+.sidebarDark, .sidebarLight{
+    width: 200px;
+    height: 100vh;
+    padding: 20px;
+}
+.sidebarDark{background-color: #272727; color: #888;}
+.sidebarLight{background-color: #f8f8f8; color: #555;}
+
+.navItem{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+    cursor: pointer;
+    font-size: 24px;
+}

@@ -4,6 +4,8 @@ import avatar1 from './assets/avatar1.jpg';
 import avatar2 from './assets/avatar2.jpg';
 import avatar3 from './assets/avatar3.jpg';
 import Header from './components/Header/Header';
+import SideBar from './components/SideBar/SideBar';
+import Dashboard from './components/Dashboard/Dashboard';
 
 const employeesData = [
   {
@@ -37,9 +39,15 @@ function App() {
   const toggleTheme = () =>{
 
   };
+  const theme = 'dark';
+
   return (
     <>
-      <Header theme='dark' onToggleTheme={toggleTheme} />
+      <SideBar theme={theme} />
+      <div className='main-content'>
+        <Header theme={theme} onToggleTheme={toggleTheme} />
+        <Dashboard employees={employeesData} theme={theme} />
+      </div>
     </>
   )
 }
