@@ -42,13 +42,13 @@ function App() {
   const theme = 'dark';
 
   return (
-    <>
+    <div className='app-container'>
       <SideBar theme={theme} />
       <div className='main-content'>
         <Header theme={theme} onToggleTheme={toggleTheme} />
         <Dashboard employees={employeesData} theme={theme} />
       </div>
-    </>
+    </div>
   )
 }
 
